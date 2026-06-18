@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Velora</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/vel.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar ------------------------------------------------------------------------------------------------------------------------->
+
+    <nav class="navbar">
+      <a href="index.html" class="logo">VELORA</a>
+
+      <!-- MOBILE ACTIONS -->
+      <div class="mobile-actions">
+        <a href="account.html" id="mobileAccountLink">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="mobileCartCount">0</span>
+        </a>
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="shop.html">Shop</a></li>
+
+        <li><a href="lookbook.html">Lookbook</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- MOBILE ONLY ICONS -->
+        <li class="mobile-icons">
+          <button class="mobile-search-btn">
+            <i class="fa-solid fa-search"></i>
+          </button>
+
+          <a href="wishlist.html" class="wishlist-icon-wrapper">
+            <i class="fa-regular fa-heart"></i>
+            <span id="mobileWishlistCount">0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- DESKTOP ICONS -->
+      <div class="nav-icons">
+        <i class="fa-solid fa-search search-btn"></i>
+
+        <a href="account.html" id="desktopAccountLink">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="wishlist.html" class="wishlist-icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
+
+          <span id="wishlistCount">0</span>
+        </a>
+
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+
+          <span id="desktopCartCount">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB --------------------------------------------------------------------->
+
+    <section class="breadcrumb">
+      <a href="index.html">Home</a>
+
+      <span>/</span>
+
+      <p>Contact Us</p>
+    </section>
+
+    <!-- CONTACT HERO --------------------------------------------------------------------------->
+
+    <section class="contact-hero">
+      <span class="contact-tag">GET IN TOUCH</span>
+
+      <h1>We'd Love To Hear From You</h1>
+
+      <p>
+        Whether you have questions about an order, need styling advice, or
+        simply want to say hello, our team is ready to assist.
+      </p>
+    </section>
+
+    <!-- CONTACT INFO ---------------------------------------------------------------------------------->
+
+    <section class="contact-info">
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+
+        <h3>Email Us</h3>
+
+        <p>hello@velora.com</p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+
+        <h3>Call Us</h3>
+
+        <p>+1 (234) 567-890</p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h3>Visit Us</h3>
+
+        <p>Lagos, Nigeria</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION ---------------------------------------------------------------------------------->
+
+    <section class="contact-section">
+      <div class="contact-form-wrapper">
+        <h2>Send Us A Message</h2>
+
+        <form id="contactForm">
+          <div class="contact-grid">
+            <input type="text" id="contactName" placeholder="Your Name" />
+
+            <input type="email" id="contactEmail" placeholder="Email Address" />
+          </div>
+
+          <input type="text" id="contactSubject" placeholder="Subject" />
+
+          <textarea
+            id="contactMessage"
+            rows="7"
+            placeholder="How can we help you?"
+          ></textarea>
+
+          <button type="submit" class="contact-btn" id="sendMessageBtn">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <div class="contact-support">
+        <span class="contact-tag">CUSTOMER SUPPORT</span>
+
+        <h2>Need Help?</h2>
+
+        <p>
+          Our support team is available to answer questions about orders,
+          deliveries, returns, sizing, and product availability.
+        </p>
+
+        <div class="support-item">
+          <i class="fa-solid fa-clock"></i>
+
+          <div>
+            <h4>Working Hours</h4>
+
+            <p>Mon - Sat: 9AM - 6PM</p>
+          </div>
+        </div>
+
+        <div class="support-item">
+          <i class="fa-solid fa-truck"></i>
+
+          <div>
+            <h4>Order Assistance</h4>
+
+            <p>Tracking, delivery updates and returns.</p>
+          </div>
+        </div>
+
+        <div class="support-item">
+          <i class="fa-solid fa-gem"></i>
+
+          <div>
+            <h4>Luxury Styling</h4>
+
+            <p>Personal shopping and wardrobe recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="contact-faq">
+      <div class="section-heading">
+        <span>QUICK ANSWERS</span>
+
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>How long does shipping take?</h3>
+
+          <p>Most orders arrive within 3-7 business days.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>Can I return an item?</h3>
+
+          <p>Yes, returns are accepted within 30 days of delivery.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>Do you ship internationally?</h3>
+
+          <p>Yes, Velora ships worldwide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================
+     FOOTER
+=========================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand -->
+
+        <div class="footer-column">
+          <h2 class="footer-logo">VELORA</h2>
+
+          <p>
+            Luxury fashion crafted for confidence, elegance, and timeless style.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Shop -->
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+
+          <a href="shop.html">Browse Collection</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">New Arrivals</a>
+        </div>
+
+        <!-- Company -->
+
+        <div class="footer-column">
+          <h3>Company</h3>
+
+          <a href="about.html">About Us</a>
+          <a href="lookbook.html">Lookbook</a>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <a href="contact.html">Contact Us</a>
+
+          <a href="mailto:hello@velora.com"> hello@velora.com </a>
+
+          <a href="tel:+1234567890"> +1 (234) 567-890 </a>
+
+          <a href="#"> Lagos, Nigeria </a>
+
+          <a href="#"> Mon - Sat: 9AM - 6PM </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Velora. All rights reserved. | Yugo Justice</p>
+      </div>
+    </footer>
+
+    <!-- ============================================================================
+     BACK TO TOP BUTTON
+=========================== -->
+
+    <button class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- =====================================================================================
+     SEARCH OVERLAY
+===================================================================================== -->
+
+    <div class="search-overlay">
+      <div class="search-overlay-content">
+        <button class="close-search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span class="search-label"> SEARCH PRODUCTS </span>
+
+        <h2>Find Your Next Favourite Piece</h2>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search jackets, shoes, bags..."
+          />
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+
+        <!-- POPULAR SEARCHES -->
+
+        <div class="popular-searches">
+          <h3>Popular Searches</h3>
+
+          <div class="search-tags">
+            <span class="search-tag">Jacket</span>
+
+            <span class="search-tag">Shoes</span>
+
+            <span class="search-tag">Bag</span>
+
+            <span class="search-tag">Watch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SUCCESS MODAL -->
+
+    <div class="contact-modal" id="contactModal">
+      <div class="contact-modal-box">
+        <div class="contact-success-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h3>Message Sent!</h3>
+
+        <p>
+          Thank you for contacting Velora. Our team will get back to you
+          shortly.
+        </p>
+
+        <button id="closeContactModal">Continue</button>
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+if (savedCategory) {
+  categoryLinks.forEach((link) => {
+    if (link.dataset.category === savedCategory) {
+      link.classList.add("active");
+    }
+  });
+}

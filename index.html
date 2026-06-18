@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VELORA</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/vel.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =====================================================================================
+         NAVBAR
+    ===================================================================================== -->
+
+    <nav class="navbar">
+      <div class="logo">VELORA</div>
+
+      <!-- MOBILE ACTIONS -->
+      <div class="mobile-actions">
+        <a href="account.html" id="mobileAccountLink">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="mobileCartCount">0</span>
+        </a>
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="shop.html">Shop</a></li>
+
+        <li><a href="lookbook.html">Lookbook</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- MOBILE ONLY ICONS -->
+        <li class="mobile-icons">
+          <button class="mobile-search-btn">
+            <i class="fa-solid fa-search"></i>
+          </button>
+
+          <a href="wishlist.html" class="wishlist-icon-wrapper">
+            <i class="fa-regular fa-heart"></i>
+            <span id="mobileWishlistCount">0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- DESKTOP ICONS -->
+      <div class="nav-icons">
+        <i class="fa-solid fa-search search-btn"></i>
+
+        <a href="account.html" id="desktopAccountLink">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="wishlist.html" class="wishlist-icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
+
+          <span id="wishlistCount">0</span>
+        </a>
+
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+
+          <span id="desktopCartCount">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section ----------------------------------------------------------------------------------->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-tag"> NEW COLLECTION 2026 </span>
+
+        <h1>
+          Redefine Your
+          <span>Fashion</span>
+          Identity
+        </h1>
+
+        <p>
+          Discover premium pieces crafted for confidence, elegance, and timeless
+          style. Elevate your wardrobe with fashion designed to stand out.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="shop.html" class="shop-btn"> Shop Collection </a>
+
+          <a href="lookbook.html" class="explore-btn"> Explore More </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/hero.webp" alt="Fashion Model" />
+
+        <div class="hero-badge">Luxury Fashion</div>
+      </div>
+    </section>
+
+    <!-- ================================================================================================
+     SHOP BY CATEGORY SECTION
+=========================== -->
+
+    <section class="categories">
+      <div class="section-title">
+        <span>EXPLORE</span>
+
+        <h2>Shop By Category</h2>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card large">
+          <img src="images/women.webp" alt="Women" loading="lazy" />
+
+          <div class="overlay">
+            <h3>Women</h3>
+            <a href="shop.html">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="category-card large">
+          <img src="images/men.webp" alt="Men" loading="lazy" />
+
+          <div class="overlay">
+            <h3>Men</h3>
+            <a href="shop.html">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="category-card wide">
+          <img src="images/accessories.webp" alt="Accessories" loading="lazy" />
+
+          <div class="overlay">
+            <h3>Accessories</h3>
+            <a href="shop.html">Discover</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================================================
+     NEW ARRIVALS SECTION
+=========================== -->
+
+    <section class="new-arrivals">
+      <div class="section-title">
+        <span>LATEST DROP</span>
+
+        <h2>New Arrivals</h2>
+      </div>
+
+      <div class="products-grid">
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card">
+          <div class="product-images">
+            <span class="product-tag">New</span>
+
+            <div
+              class="wishlist"
+              data-id="1"
+              data-name="Classic Red Jacket"
+              data-price="$120"
+              data-image="images/product1.webp"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <img src="images/product1.webp" alt="" loading="lazy" />
+
+            <a href="product.html?id=1" class="quick-view"> Quick View </a>
+          </div>
+
+          <div class="product-info">
+            <h3>Classic Red Jacket</h3>
+
+            <p>$120.00</p>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card">
+          <div class="product-images">
+            <span class="product-tag">Popular</span>
+
+            <div
+              class="wishlist"
+              data-id="2"
+              data-name="Osaka Black Shirt"
+              data-price="$85"
+              data-image="images/product2.webp"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="images/product2.webp" alt="" loading="lazy" />
+
+            <a href="product.html?id=2" class="quick-view"> Quick View </a>
+          </div>
+
+          <div class="product-info">
+            <h3>Osaka Black Shirt</h3>
+
+            <p>$85.00</p>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card">
+          <div class="product-images">
+            <span class="product-tag">Trending</span>
+
+            <div
+              class="wishlist"
+              data-id="3"
+              data-name="Lacoste Neo Shot Sneakers"
+              data-price="$140"
+              data-image="images/product3.webp"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <img src="images/product3.webp" alt="" loading="lazy" />
+
+            <a href="product.html?id=3" class="quick-view"> Quick View </a>
+          </div>
+
+          <div class="product-info">
+            <h3>Lacoste Neo Shot Sneakers</h3>
+
+            <p>$140.00</p>
+          </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card">
+          <div class="product-images">
+            <span class="product-tag">Limited</span>
+
+            <div
+              class="wishlist"
+              data-id="4"
+              data-name="Justcavali Leather Handbag"
+              data-price="$145"
+              data-image="images/product4.webp"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <img src="images/product4.webp" alt="" loading="lazy" />
+
+            <a href="product.html?id=4" class="quick-view"> Quick View </a>
+          </div>
+
+          <div class="product-info">
+            <h3>Justcavali Leather Handbag</h3>
+
+            <p>$180.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================================================
+     BRAND STORY SECTION
+=========================== -->
+
+    <section class="brand-story">
+      <div class="brand-image">
+        <img src="images/story.webp" alt="Brand Story" loading="lazy" />
+      </div>
+
+      <div class="brand-content">
+        <span class="story-tag"> OUR STORY </span>
+
+        <h2>Fashion Beyond Trends</h2>
+
+        <p>
+          At Velora, we believe fashion is more than clothing. It is a statement
+          of confidence, elegance, and individuality. Every piece is carefully
+          selected to blend timeless style with modern sophistication.
+        </p>
+
+        <p>
+          Our collections are designed for people who appreciate premium
+          quality, attention to detail, and fashion that remains relevant beyond
+          seasonal trends.
+        </p>
+
+        <div class="story-stats">
+          <div class="stat-box">
+            <h3 class="counter" data-target="10">0</h3>
+
+            <span>Years Experience</span>
+          </div>
+
+          <div class="stat-box">
+            <h3 class="counter" data-target="50">0</h3>
+
+            <span>Thousand Customers</span>
+          </div>
+
+          <div class="stat-box">
+            <h3 class="counter" data-target="200">0</h3>
+
+            <span>Products</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================
+     TRENDING COLLECTION SECTION
+=========================== -->
+
+    <section class="trending-collection">
+      <div class="section-title">
+        <span>TRENDING NOW</span>
+
+        <h2>Curated Collections</h2>
+      </div>
+
+      <div class="collection-layout">
+        <!-- Large Feature -->
+
+        <div class="collection-feature">
+          <img
+            src="images/collection-main.webp"
+            alt="Featured Collection"
+            loading="lazy"
+          />
+
+          <div class="collection-overlay">
+            <span>EDITOR'S PICK</span>
+
+            <h3>Luxury Essentials</h3>
+
+            <p>Premium pieces crafted for timeless style.</p>
+
+            <a href="shop.html"> Explore Collection </a>
+          </div>
+        </div>
+
+        <!-- Small Card 1 -->
+
+        <div class="collection-small">
+          <img src="images/streetwear.webp" alt="Streetwear" loading="lazy" />
+
+          <div class="small-overlay">
+            <h3>Streetwear</h3>
+
+            <!-- <a href="#">View</a> -->
+          </div>
+        </div>
+
+        <!-- Small Card 2 -->
+
+        <div class="collection-small">
+          <img
+            src="images/accessories-2.webp"
+            alt="Accessories"
+            loading="lazy"
+          />
+
+          <div class="small-overlay">
+            <h3>Accessories</h3>
+
+            <!-- <a href="#">View</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================================================
+     FASHION LOOKBOOK SECTION
+=========================== -->
+
+    <section class="lookbook">
+      <div class="section-title">
+        <span>EDITORIAL STYLE</span>
+
+        <h2>Fashion Lookbook</h2>
+      </div>
+
+      <div class="lookbook-grid">
+        <!-- Large Feature -->
+
+        <div class="lookbook-item large">
+          <img src="images/lookbook1.webp" alt="Lookbook" loading="lazy" />
+
+          <div class="lookbook-overlay">
+            <span>VELORA EDITION</span>
+
+            <h3>Bold Elegance</h3>
+          </div>
+        </div>
+
+        <!-- Medium -->
+
+        <div class="lookbook-item">
+          <img src="images/lookbook2.webp" alt="Lookbook" loading="lazy" />
+
+          <div class="lookbook-overlay">
+            <h3>Modern Luxury</h3>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+
+        <div class="lookbook-item">
+          <img src="images/lookbook3.webp" alt="Lookbook" loading="lazy" />
+
+          <div class="lookbook-overlay">
+            <h3>Street Culture</h3>
+          </div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/lookbook4.webp" alt="Lookbook" loading="lazy" />
+
+          <div class="lookbook-overlay">
+            <h3>Minimal Aesthetic</h3>
+          </div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/lookbook5.webp" alt="Lookbook" loading="lazy" />
+
+          <div class="lookbook-overlay">
+            <h3>Signature Pieces</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================================================
+     WHY CHOOSE VELORA SECTION
+=========================== -->
+
+    <section class="why-choose">
+      <div class="section-title">
+        <span>OUR PROMISE</span>
+
+        <h2>Why Choose Velora</h2>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+
+          <h3>Free Shipping</h3>
+
+          <p>
+            Enjoy free delivery on qualifying orders with fast nationwide
+            shipping.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <h3>Premium Quality</h3>
+
+          <p>
+            Carefully selected materials and craftsmanship for lasting elegance.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <h3>Secure Payments</h3>
+
+          <p>
+            Protected transactions and trusted payment methods for peace of
+            mind.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+
+          <h3>Fast Delivery</h3>
+
+          <p>Quick processing and reliable shipping straight to your door.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================================================
+     TESTIMONIALS SECTION
+=========================== -->
+
+    <section class="testimonials">
+      <div class="section-title">
+        <span>CLIENT REVIEWS</span>
+
+        <h2>What Our Customers Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <p>
+            The quality exceeded my expectations. Everything feels premium and
+            the delivery was incredibly fast.
+          </p>
+
+          <div class="customer">
+            <img src="images/customer1.webp" alt="Customer" loading="lazy" />
+
+            <div>
+              <h4>Sarah Johnson</h4>
+
+              <span>Loyal Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <p>
+            Velora has become my go-to fashion store. The pieces are stylish,
+            modern, and worth every penny.
+          </p>
+
+          <div class="customer">
+            <img src="images/customer2.webp" alt="Customer" loading="lazy" />
+
+            <div>
+              <h4>David Smith</h4>
+
+              <span>Fashion Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <p>
+            Excellent customer service and premium quality products. I'll
+            definitely be shopping here again.
+          </p>
+
+          <div class="customer">
+            <img src="images/customer3.webp" alt="Customer" loading="lazy" />
+
+            <div>
+              <h4>Emily Carter</h4>
+
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================
+     NEWSLETTER CTA SECTION
+=========================== -->
+
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <span>EXCLUSIVE ACCESS</span>
+
+        <h2>Join The Velora Circle</h2>
+
+        <p>
+          Be the first to discover new collections, exclusive offers, and
+          members-only fashion drops.
+        </p>
+
+        <div class="newsletter-benefits">
+          <div class="benefit">
+            <i class="fa-solid fa-check"></i>
+            Early Access
+          </div>
+
+          <div class="benefit">
+            <i class="fa-solid fa-check"></i>
+            Exclusive Discounts
+          </div>
+
+          <div class="benefit">
+            <i class="fa-solid fa-check"></i>
+            New Collection Alerts
+          </div>
+        </div>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" required />
+
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <p class="newsletter-message"></p>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================
+     FOOTER
+=========================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand -->
+
+        <div class="footer-column">
+          <h2 class="footer-logo">VELORA</h2>
+
+          <p>
+            Luxury fashion crafted for confidence, elegance, and timeless style.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Shop -->
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+
+          <a href="shop.html">Browse Collection</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">New Arrivals</a>
+        </div>
+
+        <!-- Company -->
+
+        <div class="footer-column">
+          <h3>Company</h3>
+
+          <a href="about.html">About Us</a>
+          <a href="lookbook.html">Lookbook</a>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <a href="contact.html">Contact Us</a>
+
+          <a href="mailto:hello@velora.com"> hello@velora.com </a>
+
+          <a href="tel:+1234567890"> +1 (234) 567-890 </a>
+
+          <a href="#"> Lagos, Nigeria </a>
+
+          <a href="#"> Mon - Sat: 9AM - 6PM </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Velora. All rights reserved. | Yugo Justice</p>
+      </div>
+    </footer>
+
+    <!-- =============================================================================
+     BACK TO TOP BUTTON
+=========================== -->
+
+    <button class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- =====================================================================================
+     SEARCH OVERLAY
+===================================================================================== -->
+
+    <div class="search-overlay">
+      <div class="search-overlay-content">
+        <button class="close-search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span class="search-label"> SEARCH PRODUCTS </span>
+
+        <h2>Find Your Next Favourite Piece</h2>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search jackets, shoes, bags..."
+          />
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+
+        <!-- POPULAR SEARCHES -->
+
+        <div class="popular-searches">
+          <h3>Popular Searches</h3>
+
+          <div class="search-tags">
+            <span class="search-tag">Jacket</span>
+
+            <span class="search-tag">Shoes</span>
+
+            <span class="search-tag">Bag</span>
+
+            <span class="search-tag">Watch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

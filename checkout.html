@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Checkout | Velora</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/vel.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =====================================================================================
+         NAVBAR
+    ===================================================================================== -->
+
+    <nav class="navbar">
+      <a href="index.html" class="logo">VELORA</a>
+
+      <!-- MOBILE ACTIONS -->
+      <div class="mobile-actions">
+        <a href="account.html" id="mobileAccountLink">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="mobileCartCount">0</span>
+        </a>
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="shop.html">Shop</a></li>
+
+        <li><a href="lookbook.html">Lookbook</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- MOBILE ONLY ICONS -->
+        <li class="mobile-icons">
+          <button class="mobile-search-btn">
+            <i class="fa-solid fa-search"></i>
+          </button>
+
+          <a href="wishlist.html" class="wishlist-icon-wrapper">
+            <i class="fa-regular fa-heart"></i>
+            <span id="mobileWishlistCount">0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- DESKTOP ICONS -->
+      <div class="nav-icons">
+        <i class="fa-solid fa-search search-btn"></i>
+
+        <a href="account.html" id="desktopAccountLink">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="wishlist.html" class="wishlist-icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
+
+          <span id="wishlistCount">0</span>
+        </a>
+
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+
+          <span id="desktopCartCount">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- =====================================================================================
+         BREADCRUMB
+    ===================================================================================== -->
+
+    <section class="breadcrumb">
+      <a href="index.html"> Home </a>
+
+      <span>/</span>
+
+      <a href="cart.html"> Cart </a>
+
+      <span>/</span>
+
+      <p>Checkout</p>
+    </section>
+
+    <!-- =====================================================================================
+         CHECKOUT HERO
+    ===================================================================================== -->
+
+    <section class="checkout-hero">
+      <h1>Secure Checkout</h1>
+
+      <p>
+        Complete your order and enjoy premium fashion delivered to your door.
+      </p>
+    </section>
+
+    <!-- =====================================================================================
+         CHECKOUT SECTION
+    ===================================================================================== -->
+
+    <section class="checkout-section">
+      <!-- empty checkout -->
+
+      <div id="emptyCheckout" class="empty-cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+
+        <h3>Your Cart Is Empty</h3>
+
+        <p>Add products before proceeding to checkout.</p>
+
+        <a href="shop.html" class="continue-shopping"> Continue Shopping </a>
+      </div>
+      <!-- ==========================================
+           BILLING DETAILS
+      =========================================== -->
+
+      <div class="checkout-form">
+        <h2>Billing Details</h2>
+
+        <div class="form-grid">
+          <div class="input-group">
+            <label> First Name </label>
+
+            <input type="text" id="firstName" placeholder="John" />
+          </div>
+
+          <div class="input-group">
+            <label> Last Name </label>
+
+            <input type="text" id="lastName" placeholder="Doe" />
+          </div>
+
+          <div class="input-group full-width">
+            <label> Email Address </label>
+
+            <input type="email" id="email" placeholder="john@example.com" />
+          </div>
+
+          <div class="input-group full-width">
+            <label> Phone Number </label>
+
+            <input type="tel" id="phone" placeholder="+1 234 567 890" />
+          </div>
+
+          <div class="input-group full-width">
+            <label> Street Address </label>
+
+            <input type="text" id="address" placeholder="123 Main Street" />
+          </div>
+
+          <div class="input-group">
+            <label> City </label>
+
+            <input type="text" id="city" placeholder="New York" />
+          </div>
+
+          <div class="input-group">
+            <label> Postal Code </label>
+
+            <input type="text" id="postalCode" placeholder="10001" />
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PAYMENT METHODS
+        =========================================== -->
+
+        <div class="payment-methods">
+          <h3>Payment Method</h3>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" value="Credit Card" checked />
+
+            Credit / Debit Card
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" value="PayPal" />
+
+            PayPal
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" value="Bank Transfer" />
+
+            Bank Transfer
+          </label>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           ORDER SUMMARY
+      =========================================== -->
+
+      <aside class="checkout-summary">
+        <h2>Order Summary</h2>
+
+        <div id="checkoutItems"></div>
+
+        <!-- <div class="summary-item">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div> -->
+
+        <div class="summary-total">
+          <span>Total</span>
+
+          <span id="checkoutTotal">$0.00</span>
+        </div>
+
+        <button id="placeOrderBtn" class="place-order-btn">Place Order</button>
+      </aside>
+    </section>
+
+    <!-- ========================================================================================================
+     FOOTER
+=========================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand -->
+
+        <div class="footer-column">
+          <h2 class="footer-logo">VELORA</h2>
+
+          <p>
+            Luxury fashion crafted for confidence, elegance, and timeless style.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Shop -->
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+
+          <a href="shop.html">Browse Collection</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">New Arrivals</a>
+        </div>
+
+        <!-- Company -->
+
+        <div class="footer-column">
+          <h3>Company</h3>
+
+          <a href="about.html">About Us</a>
+          <a href="lookbook.html">Lookbook</a>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <a href="contact.html">Contact Us</a>
+
+          <a href="mailto:hello@velora.com"> hello@velora.com </a>
+
+          <a href="tel:+1234567890"> +1 (234) 567-890 </a>
+
+          <a href="#"> Lagos, Nigeria </a>
+
+          <a href="#"> Mon - Sat: 9AM - 6PM </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Velora. All rights reserved. | Yugo Justice</p>
+      </div>
+    </footer>
+
+    <!-- =============================================================================
+     BACK TO TOP BUTTON
+=========================== -->
+
+    <button class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- =====================================================================================
+     SEARCH OVERLAY
+===================================================================================== -->
+
+    <div class="search-overlay">
+      <div class="search-overlay-content">
+        <button class="close-search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span class="search-label"> SEARCH PRODUCTS </span>
+
+        <h2>Find Your Next Favourite Piece</h2>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search jackets, shoes, bags..."
+          />
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+
+        <!-- POPULAR SEARCHES -->
+
+        <div class="popular-searches">
+          <h3>Popular Searches</h3>
+
+          <div class="search-tags">
+            <span class="search-tag">Jacket</span>
+
+            <span class="search-tag">Shoes</span>
+
+            <span class="search-tag">Bag</span>
+
+            <span class="search-tag">Watch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
